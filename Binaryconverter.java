@@ -8,14 +8,16 @@ import java.io.InputStreamReader;
 public class Binaryconverter {
     public static void main(String[] args) throws IOException {
         while (true) {
+            
             int position1, position2, length;
             double currentNum, exponent, total;
             String binary;
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-            System.out.print("Enter a 8 digit binary: ");
+            System.out.print("Enter a binary number: ");
             binary = br.readLine();
+            
             if (binary.matches("[0-1]+")){
 
                 length = binary.length();
