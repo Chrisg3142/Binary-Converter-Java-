@@ -24,7 +24,7 @@ public class BinaryConverter {
             response = br.readLine();
 
             if ("hexidecimal".equalsIgnoreCase(response) || "hexadecimal".equalsIgnoreCase(response)|| "hexa".equalsIgnoreCase(response)) {
-                System.out.println("You have choosen Hexadecimal");
+                System.out.println("You have chosen Hexadecimal");
                 System.out.print("Enter a binary number: ");
                 binary = br.readLine();
 
@@ -56,13 +56,9 @@ public class BinaryConverter {
                         currentNum = Integer.parseInt(binary.substring(position1, position2));
 
                         if (currentNum == 1) {
-                            System.out.println("Current Num before exponent: " + currentNum);
                             currentNum = Math.pow(2, exponent);
-                            System.out.println("current num:" +currentNum);
                             total += (int) currentNum;
-                            System.out.println("the exponent: "+ exponent);
                         } else{
-                            System.out.println("current num: " + currentNum);
                             total += 0;
                         }
 
@@ -87,7 +83,6 @@ public class BinaryConverter {
                                 default: break;
                             }
                             hexa = hexa + currentChar;
-                            System.out.println("currentChar: "+ currentChar);
                             positionCount = 0;
                             total = 0;
                             exponent = 3;
@@ -109,7 +104,7 @@ public class BinaryConverter {
                     System.out.println("Please enter bits that are 0's and 1's");
                 }
             } else { //decimal
-                System.out.println("You have choosen decimal");
+                System.out.println("You have chosen decimal");
                 System.out.print("Enter a binary number: ");
                 binary = br.readLine();
 
@@ -145,3 +140,4 @@ public class BinaryConverter {
         }
     }
 }
+
